@@ -1,0 +1,48 @@
+.row-container {
+  display: flex;
+  background-color: var(--color-200);
+  width: 100%;
+  color: var(--color-25);
+  padding: 1.6rem;
+  border-radius: .4rem;
+  box-shadow: .1rem .1rem .2rem .2rem rgba(122, 120, 120, 0.322);
+  margin-bottom: 2rem;
+  transition: transform .3s ease-in-out;
+}
+
+.row-container:hover {
+  transform: scale(1.1);
+}
+
+.row-container span {
+  flex: 1;
+}
+
+.row-container .row-icons {
+  display: flex;
+  gap: .8rem;
+}
+
+.row-container .row-icons button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.row-container .row-icons button:hover {
+  transform: scale(1.1);
+}
+
+.row-container .row-icons .btn-edit {
+  color: #fff;
+}
+
+.row-container .row-icons .btn-remove {
+  color: #ff0000;
+}
+
+.row-container.concluded {
+  background-color: var(--color-100);
+  color: #000000;
+  text-decoration: line-through;
+}
